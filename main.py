@@ -933,8 +933,9 @@ async def lifespan(app: FastAPI):
     logger.info("Starting up...")
 
     # Initialize faster-whisper model
+    MODEL_SIZE = os.getenv("MODEL_SIZE","small")
     fw_model = WhisperModel(
-        "small",
+        MODEL_SIZE,
         device="cpu",
         compute_type="int8"
     )
