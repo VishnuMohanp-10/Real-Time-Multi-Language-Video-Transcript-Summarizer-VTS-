@@ -9,6 +9,5 @@ services:
     envVars:
       - key: MODEL_SIZE
         value: tiny
-      - key: PYTHON_VERSION
-        value: 3.10.13
+      pythonVersion: 3.10.13
       
