@@ -4,6 +4,7 @@ services:
     env: python
     plan: free
     branch: main
+    pythonVersion: 3.10.13
 
     buildCommand: |
       pip install --upgrade pip setuptools wheel
