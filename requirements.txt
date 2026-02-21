@@ -12,7 +12,8 @@ soundfile==0.12.1
 numpy==1.26.4
 
 # Whisper models
-faster-whisper==0.10.0
+faster-whisper==1.0.3
+av==12.3.0
 
 # Translation
 deep-translator==1.11.4
