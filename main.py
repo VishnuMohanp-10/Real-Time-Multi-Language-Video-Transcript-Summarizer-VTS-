@@ -1,6 +1,5 @@
 import os
 import tempfile
-import whisper
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import yt_dlp as youtube_dl
