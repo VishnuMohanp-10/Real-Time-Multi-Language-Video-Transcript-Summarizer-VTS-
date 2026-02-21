@@ -1,3 +1,5 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 # Core FastAPI and web framework
 fastapi==0.109.0
 uvicorn[standard]==0.27.0
@@ -30,8 +32,8 @@ psutil==5.9.7
 pydantic==2.5.3
 
 # ML/AI
-torch==2.1.2+cpu --extra-index-url https://download.pytorch.org/whl/cpu
-torchaudio==2.1.2+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.1.2+cpu
+torchaudio==2.1.2+cpu
 
 # Additional dependencies
 python-dotenv==1.0.0
