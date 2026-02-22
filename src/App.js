@@ -31,7 +31,7 @@ const App = () => {
   const wsRef = useRef(null);
   const cancelToken = useRef(null);
   const processingTimeout = useRef(null);
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://real-time-multi-language-video.onrender.com";
 
   const checkBackend = async () => {
     try {
@@ -187,7 +187,7 @@ const App = () => {
       });
       setError(null);
   
-      const wsUrl = `ws://localhost:8000/ws/live`;
+      const wsUrl = `ws://real-time-multi-language-video.onrender.com/ws/live`;
       const ws = new WebSocket(wsUrl);
   
       ws.onopen = () => {
