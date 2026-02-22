@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://real-time-multi-language-video-yzr9.onrender.com";
+const API_URL = "https://real-time-multi-language-video.onrender.com";
 export const uploadVideo = async (file, options = {}) => {
   const formData = new FormData();
   formData.append("file", file);
