@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:8000";
-
+const API_URL = "https://real-time-multi-language-video-yzr9.onrender.com";
 export const uploadVideo = async (file, options = {}) => {
   const formData = new FormData();
   formData.append("file", file);
