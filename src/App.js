@@ -35,7 +35,7 @@ const App = () => {
 
   const checkBackend = async () => {
     try {
-      const response = await axios.get(`${API_URL}/`, { timeout: 3000 });
+      const response = await axios.get(`${API_URL}/`, { timeout: 6000 });
       return response.data.status === 'running';
     } catch (err) {
       setBackendError('Backend server is not running. Please start the Python server first.');
@@ -187,7 +187,7 @@ const App = () => {
       });
       setError(null);
   
-      const wsUrl = `ws://real-time-multi-language-video.onrender.com/ws/live`;
+      const wsUrl = `wss://real-time-multi-language-video.onrender.com/ws/live`;
       const ws = new WebSocket(wsUrl);
   
       ws.onopen = () => {
