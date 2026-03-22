@@ -293,7 +293,7 @@ const App = () => {
 
   const checkBackend = async () => {
     try {
-      const res = await axios.get(`${API_URL}/`, { timeout: 3000 });
+      const res = await axios.get(`${API_URL}/`, { timeout: 60000 });
       return res.data.status === 'running';
     } catch (err) {
       setBackendError('Backend server is not running. Please start the Python server first.');
